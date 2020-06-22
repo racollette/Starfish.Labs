@@ -2501,6 +2501,12 @@ input[type="button"].btn--primary {
     color: var(--color-btn-primary-text);
 }
 
+.menu-button {
+    /* background: #0c9fc4 !important;
+    border-color: #0c9fc4 !important; */
+    border-radius: 5px;
+}
+
 .btn.btn--primary:hover,
 button.btn--primary:hover,
 input[type="submit"].btn--primary:hover,
