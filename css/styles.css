@@ -4116,10 +4116,22 @@ html.no-csstransitions .s-hero__content {
 }
 
 .s-about__photo {
-    background-image: url(../images/about-photo.jpg);
+    background-image: url(../images/nodes.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
+    position: absolute;
+    top: var(--vspace-0_5);
+    right: var(--gutter-lg);
+    left: var(--gutter-lg);
+    bottom: var(--vspace-1);
+}
+
+.s-about__photo_2 {
+    background-image: url(../images/Starfish_Labs.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
     position: absolute;
     top: var(--vspace-0_5);
     right: var(--gutter-lg);
@@ -4239,36 +4251,37 @@ html.no-csstransitions .s-hero__content {
 
 .service-icon {
     display: block;
-    width: calc(2.25 * var(--space));
-    height: calc(2.25 * var(--space));
+    width: calc(4 * var(--space));
+    height: calc(4 * var(--space));
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+    margin-bottom: var(--vspace-0_25);
 }
 
-.service-icon--product-design {
-    background-image: url(../images/icons/services/icon-product-design.svg);
+.service-icon--web {
+    background-image: url(../images/icons/services/webdev.png);
 }
 
-.service-icon--branding {
-    background-image: url(../images/icons/services/icon-branding.svg);
+.service-icon--mobile {
+    background-image: url(../images/icons/services/mobiledev.png);
 }
 
-.service-icon--frontend {
-    background-image: url(../images/icons/services/icon-frontend.svg);
+.service-icon--blockchain {
+    background-image: url(../images/icons/services/blockchain.png);
 }
 
-.service-icon--research {
-    background-image: url(../images/icons/services/icon-research.svg);
+.service-icon--p2p {
+    background-image: url(../images/icons/services/p2p.png);
 }
 
-.service-icon--illustration {
+/* .service-icon--illustration {
     background-image: url(../images/icons/services/icon-illustration.svg);
 }
 
 .service-icon--ecommerce {
     background-image: url(../images/icons/services/icon-ecommerce.svg);
-}
+} */
 
 /* ------------------------------------------------------------------- 
  * responsive:
@@ -4302,6 +4315,7 @@ html.no-csstransitions .s-hero__content {
 .s-portfolio__list {
     max-width: calc(var(--width-max) + 40px);
     padding-top: var(--vspace-1_5);
+    padding-bottom: calc(2 * var(--vspace-1_5));
 }
 
 .folio-item {
@@ -4755,7 +4769,7 @@ html.no-csstransitions .s-hero__content {
 .s-contact__email {
     margin-top: var(--vspace-1_5);
     font-family: var(--font-2);
-    font-size: calc(var(--text-size) * 6.6);
+    font-size: calc(var(--text-size) * 4);
     font-weight: 500;
     letter-spacing: -0.01em;
     line-height: 1;
@@ -4777,13 +4791,13 @@ html.no-csstransitions .s-hero__content {
  * ------------------------------------------------------------------- */
 @media screen and (max-width: 1600px) {
     .s-contact__email {
-        font-size: calc(var(--text-size) * 6);
+        font-size: calc(var(--text-size) * 3.2);
     }
 }
 
 @media screen and (max-width: 1200px) {
     .s-contact__email {
-        font-size: 10vw;
+        font-size: 5vw;
     }
 }
 
