@@ -3207,7 +3207,7 @@ input::-moz-focus-inner {
  * ## main navigation
  * ------------------------------------------------------------------- */
 .s-header__nav-wrap {
-    padding-left: 21.6rem;
+    padding-left: 42rem;
 }
 
 .s-header__nav {
@@ -3401,6 +3401,7 @@ input::-moz-focus-inner {
 @media screen and (max-width: 1000px) {
     .s-header__nav-wrap {
         padding-left: 17.6rem;
+        visibility: hidden;
     }
     .s-header__content .btn {
         --btn-height: calc(var(--vspace-btn) - 1.6rem) !important;
@@ -4797,7 +4798,7 @@ html.no-csstransitions .s-hero__content {
 
 @media screen and (max-width: 1200px) {
     .s-contact__email {
-        font-size: 5vw;
+        font-size: 7vw;
     }
 }
 
