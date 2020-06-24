@@ -4322,6 +4322,7 @@ html.no-csstransitions .s-hero__content {
 .folio-item {
     position: relative;
     overflow: hidden;
+    padding-bottom: calc(0.25 * var(--vspace-1_5));
 }
 
 .folio-item__caption {
